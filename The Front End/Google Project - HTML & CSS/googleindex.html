@@ -47,11 +47,19 @@ input{
 .left-footer{
   float: left;
 }
+.round{
+  border-radius: 15px;
+  border: 1px #000 solid;
+  }
 .right-footer{
   float: right;
 }
 footer{
-  background-color: light-grey;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  
 }
 </style>
 
@@ -60,7 +68,7 @@ footer{
     <ul class="nav-header">
       <li> <a href="https://mail.google.com/mail/&ogbl"> Gmail</a></li>
       <li> <a href="https://www.google.co.zw/imghp?hl=en&ogbl">Images</a> </li>
-      <li><a href="https://www.google.co.zw/intl/en/about/products"> Google products </a></li>
+      <li><a href="https://www.google.co.zw/intl/en/about/products"> <img src="bars.png" alt="google products"> </a></li>
       <li>
         <button class="signIn-button" type="button"> <a href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign in </a>
         </button> </li>
@@ -68,24 +76,25 @@ footer{
   </nav>
   <img class="gimage" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Icon">
   <form action="https://www.google.com/">
-    <input type="text" name="q" title="Search">
+    <input class="round" type="text" name="q" title="Search">
     <div class= "search-buttons">
       <button type="submit"> <a href= "https://www.google.com/">Google Search </a> </button>
       <button type="submit"><a href="https://www.google.com/doodles">I am feeling Lucky </a></button>
     </div>
   </form>
   <footer>
+    
     <ul>
       <div class="left-footer">
-      <li>About </li>
-      <li> Advertising </li>
-      <li> Business</li>
-      <li> How Search works </li>
+      <li> <a href="#">About</a>  </li>
+      <li> <a href="#">Advertising</a>  </li>
+      <li> <a href="#">Business</a> </li>
+      <li> <a href="#">How Search works</a>  </li>
       </div>
       <div class="right-footer">
-      <li> Privacy </li>
-      <li> Terms </li>
-      <li>Settings  </li>
+      <li> <a href="#">Privacy</a>  </li>
+      <li> <a href="#">Terms</a>  </li>
+      <li> <a href="#">Settings</a>   </li>
       </div>
     </ul>
     </footer>
