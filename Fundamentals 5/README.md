@@ -15,9 +15,9 @@ Complete the following exercises found on this repository:
 - getTheTitles
 - findTheOldest
 
-You can go through the next video to see how you can set up and run the exercises:
+You can go through the [next video](https://www.youtube.com/watch?v=01glv9nr200) to see how you can set up and run the exercises:
 
-https://www.youtube.com/watch?v=01glv9nr200&t=1s
+<iframe width="560" height="315" src="https://www.youtube.com/embed/01glv9nr200" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Project Page](https://athena.socialhackersacademy.org/topic/fundamentals-part-5/)
 
