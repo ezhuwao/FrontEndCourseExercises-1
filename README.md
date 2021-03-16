@@ -6,7 +6,7 @@ Exercises for the Frontend Web Development Course. Each exercise must be complet
 
 ### INSTRUCTIONS
 
-- If you haven't done it already, fork this repository and add your instructor(s) as collaborator(s) to your forked repository.
+- If you haven't done it already, fork this repository.
 
 - **Sync your forked repo with the original repo (IMPORTANT)** in order to pull from the original repo whenever it gets updated. Here are the steps:
 
@@ -48,8 +48,6 @@ You can check out this [video](https://www.youtube.com/watch?v=UGmEE-UDgWI) that
 - Question: _In the Repo we only do the exercises it tells us to and ignore the other exercises inside, correct? For example I am doing JS Fundamentals 2, I should ignore the CSS Grid one_
   - Answer: **Yes, that's correct. You will have to work on the exercise(s) you are instructed to on each lesson.**
 
----
-Updated: 11.02.2021
 ---
 
 _Image by Kelly Sikkema on Unsplash_
