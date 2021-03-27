@@ -29,7 +29,16 @@
     let quote = 'I dO nOT lIke gREen eGgS anD HAM';
 
     // Add your code here
-
+    let fixedQuote= quote.toLowerCase;
+    let mapObject = {
+        green: "spinach",
+        eggs: "pizza",
+        ham: "bacon"
+        };
+    fixedQuote = fixedQuote.replace(/green|eggs|ham/gi, function(matched){
+      return mapObj[matched];
+    });
+    let finalQuote = fixedQuote +".";
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
