@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body id="container">
+    
+    <script>
+        const container = document.getElementById('#container');
+
+        let paragraph = document.createElement('p');
+        paragraph.classList.add('paragraph');
+        paragraph.textContent = "Hey I’m red!";
+        
+        let heading = document.createElement('h3');
+        heading.textContent = "I’m a blue h3!";
+
+        let divBlack = document.createElement('div');
+        divBlack.style.border = '1px solid black';
+        divBlack.style.backgroundColor='pink'; 
+        let heading1 = document.createElement('h1');
+        heading1.textContent= 'I am in a DIV';
+
+        let divp =document.createElement('p');
+        divp.textContent="Me Too!";
+        
+        divBlack.appendChild(heading1);
+        divBlack.appendChild(divp);
+   
+
+        document.body.appendChild(paragraph);
+        document.body.appendChild(heading);
+        document.body.appendChild(divBlack);
+    </script>
+</body>
+</html>
