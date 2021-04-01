@@ -1,0 +1,28 @@
+body{
+    background-image: url(images/footerpic.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+p{
+    color: oldlace;
+}
+h1{
+    color: navy;
+    
+}
+table{
+    padding: 5%;
+    color: oldlace;
+    border-radius: 10%;
+}
+table td {
+    padding: 2%;
+}
+.header{
+    margin: auto;
+    width: 50%;
+}
+h2{
+    color: rgb(248, 246, 240);
+}
