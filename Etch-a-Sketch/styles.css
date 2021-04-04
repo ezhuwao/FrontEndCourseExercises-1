@@ -1,0 +1,44 @@
+section {
+    
+    
+}
+:root{
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+#setLayout{
+    height: 100vh;
+    grid-template-areas: 
+    'section', '#container';
+}
+#setLayout > section{
+    grid-area: section;
+    height:2px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 5%;
+    background-color: white;
+}
+#setLayout > #container{
+    grid-area: '#container';
+    overflow: auto;
+    padding: 150px 10px 100px 10px;
+}
+#container {
+    height: -50px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid rgb(221, 221, 221);
+    text-align: center;
+}
+.grid-item:hover{
+    background-color: crimson;
+}
