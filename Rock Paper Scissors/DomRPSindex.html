@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors </title>
+</head>
+<link rel="stylesheet" href="DomRPS.css">
+<body id="container">
+    <script type="text/javascript" >
+     
+               
+        const rockbtn = document.createElement('button');
+        rockbtn.innerText= 'ROCK';
+        rockbtn.setAttribute('data-choice', 'rock');
+        rockbtn.className = 'Choice';
+        rockbtn.setAttribute('id', 'rockbtn');
+        
+        const paperbtn = document.createElement('button');
+        paperbtn.innerText= 'PAPER';
+        paperbtn.setAttribute('data-choice', 'paper');
+        paperbtn.className = 'Choice';
+        paperbtn.setAttribute('id', 'paperbtn');
+        
+        const scissorsbtn = document.createElement('button');
+        scissorsbtn.innerText= 'SCISSORS';
+        scissorsbtn.setAttribute('data-choice', 'scissors');
+        scissorsbtn.className = 'Choice';
+        scissorsbtn.setAttribute('id', 'scissorsbtn');
+        
+        const divChoices = document.createElement('div');
+        divChoices.className = 'choices';
+        divChoices.append(rockbtn, scissorsbtn,paperbtn);
+        document.body.appendChild(divChoices);
+
+        const divResults  = document.createElement('div');
+        divResults.innerText = 'RESULTS'; 
+        divResults.className= 'results';
+
+        const playerScore = document.createElement('div');
+        playerScore.innerText= 'Player Score';
+        playerScore.className ='resultsScore';
+
+        const playerScoreValue = document.createElement('span');
+        playerScoreValue.innerText = '0';
+        playerScore.className ='results';
+        playerScore.appendChild(playerScoreValue);
+       
+        const computerScore = document.createElement('div');
+        computerScore.innerText = 'Computer Score';
+        computerScore.className ='results';
+        
+        const computerScoreValue = document.createElement('span');
+        computerScoreValue.innerText = '0';
+        computerScoreValue.className ='resultsScore';
+        computerScore.appendChild(computerScoreValue);
+
+        divResults.append(playerScore, playerScoreValue, computerScore, computerScoreValue);
+        document.body.appendChild(divResults);
+        playerScore.setAttribute('data-playerScore', '');
+        computerScore.setAttribute('data-computerScore', '');
+ 
+
+        const buttonChoices = document.querySelectorAll('[data-choice]');
+        const computerResult = document.querySelector('[data-computerScore]');
+        const playerResult  = document.querySelector('[data-playerScore]');
+        const CHOICES = [
+            {
+             name: 'rock',
+             beats: 'paper'
+            },
+            {
+             name: 'paper',
+             beats: 'rock'
+            },
+            {
+             name: 'scissors',
+             beats: 'paper'
+            }
+        ]
+
+        buttonChoices.forEach(buttonChoice => {
+            buttonChoice.addEventListener('click', e => {
+               const choiceName = buttonChoice.dataset.choice;
+               const choice = CHOICES.find(choice => choice.name === choiceName )
+               makeChoice(choiceName);
+            });
+        });
+        function makeChoice (choice){
+         const computerChoice = computerPlay();
+         const isPlayerWinner = winner(choice, computerChoice);
+         const computerWinner = winner(computerChoice, choice);
+         
+         addChoiceResult(computerChoice, computerWinner);
+         addChoiceResult(choice, isPlayerWinner);
+        if (isPlayerWinner) incrementScore(playerScoreSpan);
+        if (computerWinner)incrementScore(computerScoreSpan);
+        }
+        function incrementScore(scoreSpan){
+            scoreSpan.innerText =parseInt(scoreSpan.innerText)+1;
+        }
+        function addChoiceResult (choice, winnerN){
+           
+
+        }
+
+        function winner( choice, rivalChoice){
+            return choice.beats  === rivalChoice.name;
+        }
+
+        function computerPlay() {//random computer selections/ choices
+            let randomNumber = Math.floor(Math.random()*CHOICES.length);
+            return CHOICES[randomNumber];
+        }
+
+
+
+    </script>
+</body>
+</html>

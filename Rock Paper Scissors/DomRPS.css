@@ -1,0 +1,40 @@
+
+body {
+    background-color: rgb(171, 173, 166);
+}
+.choices {
+    display: flex;
+    justify-content: center;
+
+}
+.choice {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.choice:hover{
+    transform: scale(1.2);
+}
+button {
+        width: 100px;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 8px; 
+}
+#rockbtn {
+    background-color: rgb(125, 104, 201);
+}
+#paperbtn {
+    background-color: chartreuse;
+}
+#scissorsbtn {
+    background-color: crimson;
+} 
+.results {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
