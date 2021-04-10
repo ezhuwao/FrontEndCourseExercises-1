@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Functions </title>
+</head>
+<body>
+    <script>
+        // 1) Type of function? 
+document.write("<p>Function Declaration</p>");
+function add7(number){
+  return number+7;
+}
+
+console.log(add7());
+// 2) Type of function?
+document.write("<p>Function Expression</p>");
+const multiply = function(a,b){
+      return a*b;
+}
+console.log(multiply());
+// 3) Type of function?
+document.write("<p>Arrow Function </p>");
+let capitalize = (str)=>{
+         if (str == str.toUpperCase() || str.toLowerCase() ) {
+      result = str.charAt(0).toUpperCase() + str.slice(1);
+         } else{
+       alert("Not Uppercase or LowerCase");
+    }
+    return result;
+    
+  };
+console.log(capitalize());
+
+// 4) Type of function?
+document.write("<p>Function Declaration</p>");
+function lastLetter(myString){
+  const stringLength = myString.length;
+  return myString.charAt(stringLength-1);
+  // Your code goes here...
+}
+console.log(lastLetter());
+    </script>
+</body>
+</html>

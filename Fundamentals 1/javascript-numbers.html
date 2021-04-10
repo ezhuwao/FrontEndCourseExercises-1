@@ -183,10 +183,18 @@
     </head>
     <body>
 
-        <div class="header">
+        <script>
+            const yearOfEstablishment = 2005;
+            const currentYear = (new Date()).getFullYear();
+            let yearsOfExperience = (new Date()).getFullYear() - yearOfEstablishment;
+        </script>
+        <header  class="header">
             <h1><span>Social Hackers</span>Company</h1>
-            <h2>We are a competitive firm with over 15 years of experience in the field of computer generated probabilistic maintenance hybrid datasets.</h2>
-        </div>
+            <h2>We are a competitive firm with over 
+                <script> document.write(yearsOfExperience); </script>
+                 years of experience in the field of computer generated probabilistic maintenance hybrid datasets.</h2>
+        </header>
+
 
         <section class="section">
             <div class="wrapper">
@@ -199,26 +207,52 @@
                 <div class="box__grid">
                     <article class="box"><a class="box__content" href="#"><i class="fa fa-lightbulb-o fa-3x"></i>
             <h3 class="box__title">Website Design</h3>
-            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; 500</span></a></article>
+            <script>
+                let salesPercentage=0.25;
+               const markedPrice1 =666.67;
+               const discount1 = salesPercentage*markedPrice1;
+               const finalPrice1 = markedPrice1-discount1;
+               const markedPrice2 = 533.33;
+               const discount2 = salesPercentage*markedPrice2;
+               const finalPrice2 = markedPrice2-discount2;
+               const markedPrice3 =466.67;
+               const discount3 = salesPercentage*markedPrice3;
+               const finalPrice3 = markedPrice3-discount3;
+              
+
+            </script> 
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; <script>document.write(~~finalPrice1);</script></span></a></article>
                     <article class="box"><a class="box__content" href="#"><i class="fa fa-code fa-3x"></i>
             <h3 class="box__title">Software Applications</h3>
-            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; 400</span></a></article>
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; <script>document.write(~~~finalPrice2);</script></span></a></article>
                     <article class="box"><a class="box__content" href="#"><i class="fa fa-mobile fa-3x"></i>
             <h3 class="box__title">Mobile Applications</h3>
-            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; 350</span></a></article>
+            <p>Duis neque leo cursus ac libero ac imperdiet bibendum nisl mauris neque diam vulputate nem.</p><span class="box__more">Special offer 25% off: &euro; <script>document.write(~~finalPrice3);</script></span></a></article>
                 </div>
             </div>
         </section>
 
-        <div class="section section--cta">
+        <section class="section section--cta">
             <div class="wrapper">
                 <h2 class="section__title">Full package</h2>
-                <p class="section__intro">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.</p><a class="btn" href="#">Special offer 25% off: &euro;1250</a>
+                <script>
+               const fullPackagePrice =1533.33;
+               const discountFP = salesPercentage*fullPackagePrice;
+               const finalPriceFullPackage = fullPackagePrice-discountFP;
+                </script>
+                <p class="section__intro">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Curabitur blandit tempus porttitor.</p><a class="btn" href="#">Special offer 25% off: &euro;<script>document.write(~~finalPriceFullPackage);</script></a>
             </div>
-        </div>
-        <div class="footer">
-            <p>&copy; 2005 ~ 2020 Landing Page</p>
-        </div>
+        </section>
+        <footer class="footer">
+            <script>
+            const dateCreated =2005;
+            </script>
+            <p>&copy; 
+                <script>document.write(dateCreated +  "~" + currentYear);
+                </script>  
+                Landing Page
+            </p>
+        </footer>
 
     </body>
 </html>

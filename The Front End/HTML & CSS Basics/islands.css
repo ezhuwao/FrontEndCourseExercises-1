@@ -1,0 +1,42 @@
+h1 {
+    font-family: sans-serif;
+    color: blue;
+    text-align: center;
+    
+}
+.container{
+    display: flex;
+    max-width: 200px;
+    margin:auto;
+    box-sizing: border-box;
+    background-color: grey;
+
+    
+}
+img{
+    width: 1200;
+    height: 800;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3{
+    text-align: center;
+}
+p{
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    float:right;
+    text-align: center;
+}
