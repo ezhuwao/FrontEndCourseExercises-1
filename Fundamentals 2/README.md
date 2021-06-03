@@ -24,7 +24,11 @@ Initial code:
 - [strings3-download.html](strings3-download.html)
 - [strings4-download.html](strings4-download.html)
 
-3) Paste all the solutions of the `repl.it` exerices in a file named `replit-lessons-solved.txt`.
+3) Paste all the solutions of the `repl.it` exercises in a file named `replit-lessons-solved.txt`.
+
+4) Open the strings-practice.html file below and complete the exercises given.
+
+- [strings-practice.html](strings-practice.html)
 
 **Submission:** When everything has been set up submit the URL of the GitHub Pull Request for the solution branch of this exercise. 
 
