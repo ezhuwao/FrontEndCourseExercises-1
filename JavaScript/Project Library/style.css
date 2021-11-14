@@ -1,0 +1,34 @@
+#alfa {
+    
+    margin-left: 42%;
+    display: inline-block;
+
+}
+.border {
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.red {
+    color: red;
+}
+
+#myBooks {
+    display: flex;
+    justify-content: center;
+}
+
+.divEl {
+    margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    #myBooks {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+h2 {
+    text-align: center;
+}

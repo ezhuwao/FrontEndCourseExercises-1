@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cem's Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="projectLibrary.js" defer></script>
+</head>
+<body>
+    <h2>Cem's Library</h2>
+    <div id="alfa" class="border">
+        <h3 >Add New Book</h3>
+        <form >
+            <p>
+                <label for="author">Author: </label>
+                <input type="text" name="author" id="author">
+            </p>
+
+            <p>
+                <label for="title">Title: </label>
+                <input type="text" name="title" id="title">
+            </p>
+            
+            <p>
+                <label for="number">Number of Pages: </label>
+                <input type="number" name="number" id="number">
+            </p>
+
+            <button id="addButton">Add</button>
+        </form>
+    </div>
+    <!-- book will be shown here -->
+    <ul id="myBooks"></ul>
+</body>
+</html>
