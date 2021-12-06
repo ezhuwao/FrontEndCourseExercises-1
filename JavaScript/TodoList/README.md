@@ -1,6 +1,6 @@
 ![](README.jpg)
 
-# ORGANIZING YOUR JAVASCRIPT CODE | PROJECT: LIBRARY
+# ORGANIZING YOUR JAVASCRIPT CODE | PROJECT: TodoList
 
 [**Submission Instructions (Ctrl+Click to open in a new Tab)**](https://github.com/SocialHackersAcademy/FrontEndCourseExercises/#instructions)
 
